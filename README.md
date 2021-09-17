@@ -13,3 +13,4 @@ npm install -D @types/bcrypt @types/connect-multiparty @types/jwt-simple @types/
 
 ## RUN 
 npm run dev
+"start": "npm run build && node dist/index.js",
