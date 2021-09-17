@@ -1,0 +1,16 @@
+use red_social
+
+db.createCollection("users")
+
+
+db.users.insert(
+                    {
+                    "nombre": "Luis",
+                    "apellido": "Sacbaja",
+                    "nick": "Zofo", 
+                    "email": "angelessacbaja@gmail.com",
+                    "password": "DEVzipo16",
+                    "roles": "Admin",
+                    "imagenes": "null"
+                    }
+                )

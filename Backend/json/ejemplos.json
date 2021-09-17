@@ -1,0 +1,11 @@
+Usuarios
+{
+    "nombre" : "Marlon",
+    "apellido" : "Higeros",
+    "nick" : "dns",
+    "email" : "madddrlon@gmail.com",
+    "roles" : "ROLE_USER",
+    "imagenes" : null,
+    "password" : "zipo",
+    "__v" : 0
+}
