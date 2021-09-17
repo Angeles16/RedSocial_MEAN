@@ -1,8 +1,9 @@
 # RedSocial_MEAN
 
 ## BACKEND 
-this project generate nodejs 
-code ==> typescript
+this project was generate with Nodejs 
+
+==> typescript
 
 ## DEPENDENCIES
 nom install bcrypt express connect-multiparty jws-simple moment mongoose
