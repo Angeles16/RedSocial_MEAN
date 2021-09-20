@@ -10,6 +10,8 @@ const controllers = {};
 const User = require('../models/user');
 const jwt = require('../services/jwt');
 
+
+//ruebas
 export async function getHome(req: Request, res: Response): Promise<Response> {
 
     return res.json({ hola: 'wenas' });
@@ -87,7 +89,7 @@ export async function postSingIn(req: Request, res: Response):Promise<void> {
                 if(check){
                     
                     if(param.gettoken){
-                        //devolver token y generar token
+                        //generar token y devlver token 
                         return res.status(200).send({ 
                             token: jwt.createToken(user)
                         });
@@ -105,4 +107,23 @@ export async function postSingIn(req: Request, res: Response):Promise<void> {
             return res.status(404).send({ message: 'Usuario o contraseña incorrecto'});
         }
     });
+}
+
+//obtener un usuario por id
+export function getUser(req: Request, res: Response){
+    const userId = req.params.id;
+
+    User.findById(userId, (err, user) => {
+        if(err) return res.status(500).send({message: 'Error en la peticion'});
+        if(!user) return res.status(404).send({message: 'El usuario no exste'});
+
+        return res.status(200).send({user})
+    });
+}
+
+//Devolver un listado de usuario paginados
+function getUsers(req: Request, res: Response){
+  const identity = req.user.sub; //ERRROR 
+
+    
 }

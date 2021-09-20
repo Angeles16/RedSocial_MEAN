@@ -1,11 +1,22 @@
-Usuarios
+//Ingresar datos de usuario 
 {
-    "nombre" : "Marlon",
-    "apellido" : "Higeros",
-    "nick" : "dns",
-    "email" : "madddrlon@gmail.com",
-    "roles" : "ROLE_USER",
-    "imagenes" : null,
-    "password" : "zipo",
-    "__v" : 0
+    "nombre": "Marlon",
+    "apellido": "Higeros",
+    "nick": "dns",
+    "email": "madddrlon@gmail.com",
+    "roles": "ROLE_USER",
+    "imagenes": null,
+    "password": "zipo",
+    "__v": 0
+}
+//obtener toquen de
+{
+    "nombre": "Marlon",
+    "apellido": "Higeros",
+    "nick": "dns",
+    "email": "madddrlon@gmail.com",
+    "password": "zipo",
+    "roles": "ROLE_USER",
+    "imagenes": null,
+    "gettoken": true
 }
